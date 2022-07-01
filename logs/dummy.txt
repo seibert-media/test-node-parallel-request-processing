@@ -1,0 +1,22 @@
+➜  parallelest git:(master) ✗ npx loadtest -n 1000 -c 100 http://localhost:9000/dummy
+[Fri Jul 01 2022 15:50:44 GMT+0200 (Central European Summer Time)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Jul 01 2022 15:50:49 GMT+0200 (Central European Summer Time)] INFO Requests: 400 (40%), requests per second: 80, mean latency: 1027.7 ms
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO Requests: 900 (90%), requests per second: 100, mean latency: 1004.6 ms
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO Target URL:          http://localhost:9000/dummy
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO Max requests:        1000
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO Concurrency level:   100
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO Agent:               none
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO Completed requests:  1000
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO Total errors:        0
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO Total time:          10.205266517 s
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO Requests per second: 98
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO Mean latency:        1013.7 ms
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO Percentage of the requests served within a certain time
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO   50%      1005 ms
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO   90%      1038 ms
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO   95%      1045 ms
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO   99%      1053 ms
+[Fri Jul 01 2022 15:50:54 GMT+0200 (Central European Summer Time)] INFO  100%      1055 ms (longest request)

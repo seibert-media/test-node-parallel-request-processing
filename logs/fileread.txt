@@ -1,0 +1,20 @@
+➜  parallelest git:(master) ✗ npx loadtest -n 1000 -c 100 http://localhost:9000/file
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO Target URL:          http://localhost:9000/file
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO Max requests:        1000
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO Concurrency level:   100
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO Agent:               none
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO Completed requests:  1000
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO Total errors:        0
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO Total time:          0.422263464 s
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO Requests per second: 2368
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO Mean latency:        38.9 ms
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO Percentage of the requests served within a certain time
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO   50%      37 ms
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO   90%      47 ms
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO   95%      49 ms
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO   99%      59 ms
+[Fri Jul 01 2022 14:35:02 GMT+0200 (Central European Summer Time)] INFO  100%      61 ms (longest request)

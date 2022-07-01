@@ -1,24 +1,32 @@
 import express, { Express, Request, Response } from 'express';
 import { readFileSync } from 'fs';
+import axios from 'axios';
 
 const app: Express = express();
 const port = 9000;
 
 app.get('/', (req: Request, res: Response) => {
-	// read file and output result
-	res.send(`<a href="/file")>Read file</a><br><a href="/cpu")>Heavy cpu</a>`);
+	res.send(`<a href="/file")>Read file</a><br><a href="/cpu")>Heavy cpu</a><br><a href="/cpu")>read from server</a>`);
 });
 
 app.get('/file', (req: Request, res: Response) => {
-	// read file and output result
 	const file = readFileSync('./testfile.txt', 'utf-8');
 	res.send('<b>Express + TypeScript Server</b> ' + file);
 });
 
 app.get('/cpu', (req: Request, res: Response) => {
-	// read file and output result
 	mySlowFunction(10);
 	res.send('<b>Express + TypeScript Server</b> ');
+});
+
+app.get('/sleepy', async (req: Request, res: Response) => {
+	await new Promise(resolve => setTimeout(resolve, 1000));
+	res.send('resolved dummy');
+});
+
+app.get('/readfromserver', async (req: Request, res: Response) => {
+	let result = await axios.get('http://localhost:9000/sleepy');
+	res.send('resolved ' +result.data);
 });
 
 
